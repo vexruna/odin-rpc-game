@@ -1,5 +1,10 @@
 /* This is a game of rock paper scissors */
 
+const playButton = document.getElementById("playButton");
+const newGameButton = document.getElementById("newGameButton");
+const input = document.getElementById("mychoice");
+const result_log = document.getElementById("GameResult");
+
 let humanScore = 0;
 let computerScore = 0;
 
@@ -77,4 +82,18 @@ function getHumanChoice() {
 	return choice;
 }
 
-playGame(5);
+playButton.addEventListener("click", () => {
+	let input_value = input.value;
+	let round_result = playRound(input_value, getComputerChoice());
+	input_value = "";
+
+	let p = document.createElement("p");
+	p.textContent = round_result;
+
+	result_log.appendChild(p);
+});
+newGameButton.addEventListener("click", () => {
+	while (result_log.lastChild) {
+		result_log.removeChild(result_log.lastChild);
+	}
+});

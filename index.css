@@ -11,6 +11,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: moccasin;
+	gap: 24px;
 }
 
 .GameTitle {
@@ -26,6 +27,11 @@ body {
 	gap: 16px;
 }
 
+.buttons {
+	display: flex;
+	gap: 34px;
+}
+
 .GamePromptContainer input {
 	outline: 2px solid dimgray;
 	width: 196px;
@@ -35,5 +41,16 @@ body {
 
 button {
 	height: 32px;
-	width: 64px;
+	width: 128px;
+	background-color: azure;
+}
+
+#GameResult {
+	display: flex;
+	outline: 2px solid black;
+	width: 360px;
+	margin: 16px;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
 }
