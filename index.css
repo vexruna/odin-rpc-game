@@ -1,56 +1,63 @@
 body {
-	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
 	margin: 0;
 	padding: 0;
-}
-
-.GameContainer {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: moccasin;
-	gap: 24px;
-}
-
-.GameTitle {
-	font-family: "Comic Sans", cursive;
-	font-size: 69px;
-	margin: 24px;
-}
-
-.GamePromptContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	background-color: rebeccapurple;
 	gap: 16px;
 }
 
-.buttons {
-	display: flex;
-	gap: 34px;
+#title {
+	font-size: 96px;
 }
 
-.GamePromptContainer input {
-	outline: 2px solid dimgray;
-	width: 196px;
-	height: 24px;
-	padding: 16px;
+ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 500px;
+	height: 120px;
+	gap: 16px;
+	justify-content: space-evenly;
+}
+
+li {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
 }
 
 button {
-	height: 32px;
-	width: 128px;
-	background-color: azure;
+	padding: 0;
+	margin: 0;
+	width: 80px;
+	height: 80px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: mediumaquamarine;
+	border: none;
 }
 
-#GameResult {
+button:hover {
+	color: black;
+	background-color: white;
+}
+
+#result_log {
 	display: flex;
-	outline: 2px solid black;
-	width: 360px;
-	margin: 16px;
-	flex-direction: column;
-	text-align: center;
+	justify-content: center;
 	align-items: center;
+	flex-flow: column nowrap;
+	padding: 16px;
+	margin: 0;
+	border: 2px solid black;
+	width: 500px;
+}
+
+#result_log>p {
+	color: aquamarine;
 }

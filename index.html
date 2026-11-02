@@ -7,19 +7,14 @@
 		<link href="index.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="GameContainer">
-			<div class="GameTitle">
-				Rock, Paper, Scissors!
-			</div>
-			<div class="GamePromptContainer">
-				<input type="text" id="mychoice" placeholder="Type your choice here...">
-				<div class="buttons">
-					<button type="button" id="playButton">Play</button>
-					<button type="button" id="newGameButton">New Game</button>
-				</div>
-			</div>
-			<div id="GameResult">
-			</div>
+		<h1 id="title">Rock, Paper, Scissors</h1>
+		<ul>
+			<li><button id="rockbtn" type="button">Rock</button></li>
+			<li><button id="paperbtn" type="button">Paper</button></li>
+			<li><button id="scissorsbtn" type="button">Scissors</button></li>
+			<li><button id="bombbtn" type="button">Bomb</button></li>
+		</ul>
+		<div id="result_log">
 		</div>
 		<script src="index.js"></script>
 	</body>
