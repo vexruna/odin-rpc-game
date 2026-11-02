@@ -56,6 +56,7 @@ function playRound(humanChoice, computerChoice) {
 		humanScore += 1;
 	} else {
 		result = "You don't know how to play this game.";
+		computerScore += 1;
 	}
 	const resultp = document.createElement("p");
 	resultp.textContent = result;
